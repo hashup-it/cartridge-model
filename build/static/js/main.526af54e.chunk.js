@@ -1,2 +1,0 @@
-(this["webpackJsonpcartridge-model"]=this["webpackJsonpcartridge-model"]||[]).push([[0],{9:function(e,t,r){"use strict";r.r(t);var c=r(1),n=r.n(c),s=r(3),a=r.n(s),d=r(0);var i=function(){return Object(d.jsx)("div",{className:"App"})};a.a.render(Object(d.jsx)(n.a.StrictMode,{children:Object(d.jsx)(i,{})}),document.getElementById("root"))}},[[9,1,2]]]);
-//# sourceMappingURL=main.526af54e.chunk.js.map
