@@ -2,6 +2,9 @@
   "name": "cartridge-model",
   "version": "0.1.0",
   "private": true,
+  "main": "./lib/cjs/index.js",
+  "module": "./lib/esm/index.js",
+  "types": "./lib/esm/index.d.ts",
   "dependencies": {
     "@types/node": "^16.11.24",
     "@types/react": "^17.0.39",
@@ -14,9 +17,11 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "build": "yarn build:esm && yarn build:cjs",
+    "build:esm": "tsc",
+    "build:cjs": "tsc --module commonjs --outDir lib/cjs"
   },
   "eslintConfig": {
     "extends": [
