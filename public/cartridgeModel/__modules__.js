@@ -23,6 +23,7 @@ var loadModules = function (modules, urlPrefix, doneCallback) {
         };
         tag.async = true;
         tag.src = url;
+        tag.crossOrigin = 'anonymous';
         document.head.appendChild(tag);
     }
 
